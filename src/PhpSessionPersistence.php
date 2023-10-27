@@ -167,7 +167,10 @@ class PhpSessionPersistence implements InitializePersistenceIdInterface, Session
      */
     private function startSession(string $id, array $options = []): void
     {
-        session_id($id);
+        if (!session_id()) { // Check if session is already set beforehand
+            session_id($id);
+        }
+        
         session_start([
             'use_cookies'      => false,
             'use_only_cookies' => true,
