@@ -1,5 +1,5 @@
 {
-    "name": "mezzio/mezzio-session-ext",
+    "name": "inchie/mezzio-session-ext",
     "description": "ext-session persistence adapter for mezzio-session",
     "license": "BSD-3-Clause",
     "keywords": [
